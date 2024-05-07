@@ -1,6 +1,6 @@
 import React from 'react'
 import { Doctors, Services } from './'
-import { About, Faq, Testimonial } from '../components'
+import { About, Faq, ServiceList, Testimonial } from '../components'
 
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
@@ -155,7 +155,7 @@ const Home = () => {
                             unmatched, expert health care.
                         </p>
                     </div>
-                    <Services />
+                    <ServiceList />
                 </div>
             </section>
 
