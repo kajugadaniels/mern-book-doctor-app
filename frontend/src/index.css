@@ -36,7 +36,7 @@ body {
   }
 
   .text_para {
-    @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
+    @apply text-[14px] leading-[30px] font-[400] text-textColor mt-[18px];
   }
 
   .header {
