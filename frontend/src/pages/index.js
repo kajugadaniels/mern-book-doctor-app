@@ -5,6 +5,9 @@ import Login from './Login'
 import Signup from './Signup'
 import Doctors from './Doctors/Doctors'
 import Details from './Doctors/Details'
+import DoctorAbout from './Doctors/DoctorAbout'
+import Feedback from './Doctors/Feedback'
+import SidePanel from './Doctors/SidePanel'
 
 export {
     Home,
@@ -14,4 +17,7 @@ export {
     Signup,
     Doctors,
     Details,
+    DoctorAbout,
+    Feedback,
+    SidePanel,
 }
