@@ -1,6 +1,6 @@
 import React from 'react'
-import { About, Doctors, Services } from './'
-import { Faq, Testimonial } from '../components'
+import { Doctors, Services } from './'
+import { About, Faq, Testimonial } from '../components'
 
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
