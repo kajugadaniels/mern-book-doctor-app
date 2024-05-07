@@ -1,9 +1,36 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+import { useState } from "react";
+import { reviews } from "../../assets/data/reviews.js";
 
-const Feedback = () => {
+import { Reviews, FeedBackForm } from '../'
+
+const Feedback = ({ doctor }) => {
+    const [feedbackForm, setFeedbackForm] = useState(false);
+
     return (
-        <div>Feedback</div>
-    )
-}
+        <div>
+            <div className="mb-[50px]">
+                <h4 className="text-[20px] leading-[30px] font-bold text-headingColor mb-[30px] ">
+                    All review ({doctor.totalRating})
+                </h4>
 
-export default Feedback
+                {reviews.map((items, index) => (
+                    <Reviews key={index} items={items} />
+                ))}
+            </div>
+            <div>
+                {!feedbackForm && (
+                    <div className="text-center">
+                        <button onClick={() => setFeedbackForm(true)} className="btn">
+                            Give Feedback{" "}
+                        </button>{" "}
+                    </div>
+                )}
+
+                {feedbackForm && <FeedBackForm />}
+            </div>
+        </div>
+    );
+};
+
+export default Feedback;
